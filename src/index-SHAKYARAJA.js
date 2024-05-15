@@ -126,6 +126,6 @@ mongoose.connect("mongodb://localhost:27017/DynamicWeb").then(() => {
     console.log(error);
   });
 
-app.listen(process.env.PORT | port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
